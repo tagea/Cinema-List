@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Что посмотреть? / Список фильмов с отзывами и рейтингом пользователей</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/classes.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/function.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="main-h1">Библиотека фильмов</h1>
+    </div>
+</header>
+<main class="main">
+    <div class="content container">
+        <div class="side-menu">
+            <div class="search">
+                <form action="#" method="post" class="form-search">
+                    <input id="search" type="text" class="search__input" name="film-search">
+                    <label for="search" class="search__label">Найти название фильма</label>
+                    <input type="button" class="search__submit" value="поиск">
+                </form>
+            </div>
+            <div class="category">
+                <ul class="category__list">
+                </ul>
+            </div>
+            <div class="rating-choose">
+               <ul class="rating__list">
+               </ul>
+            </div>
+        </div>
+        <div class="films">
+            <ul class="films__list">
+            </ul>
+            <div class="film-descr">
+                <div class="film-descr__cover">
+                </div>
+                <div class="film-descr__about">
+                    <h1 class="film-descr__title"></h1>
+                    <h2>Описание</h2>
+                    <p class="film-descr__text"></p>
+                    <p class="film-descr__year-country"></p>
+                    <h2>Рейтинг</h2>
+                    <div class="stars"></div>
+                    <h2>Мнения</h2>
+                    <div class="film-descr__review">
+                        <ul class="review__list">
+                        </ul>
+                    </div>
+                    <h2>Добавить отзыв</h2>
+                    <form action="#" method="post" class="review-form">
+                        <label for="name" class="review-form__label">Имя</label>
+                        <input id="name" type="text" class="review-form__input review-name" name="name-user" required>
+                        <label  class="review-form__label">Ваша оценка за фильм<br>
+                            <input type="radio" name="star" class="review-form__radio" value="1">1
+                            <input type="radio" name="star" class="review-form__radio" value="2">2
+                            <input type="radio" name="star" class="review-form__radio" value="3">3
+                            <input type="radio" name="star" class="review-form__radio" value="4">4
+                            <input type="radio" name="star" class="review-form__radio" value="5" checked>5
+                        </label>
+                        <label for="message" class="review-form__label">Отзыв о фильме</label>
+                        <textarea id="message" class="review-form__text" name="review-film"></textarea>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">&copy; WToWatch, 2018</div>
+</footer>
+</body>
+</html>
